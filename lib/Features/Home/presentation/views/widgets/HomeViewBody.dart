@@ -1,4 +1,5 @@
 import 'package:bookly/Core/Utitls/Styles.dart';
+import 'package:bookly/Features/Home/presentation/views/widgets/BestSlleritem.dart';
 import 'package:flutter/material.dart';
 import 'CustomAppBar.dart';
 import 'Featuredlistview.dart';
@@ -19,6 +20,10 @@ class HomeViewBody extends StatelessWidget {
             'Best seller',
             style: styles.titleMedium,
           ),
+        ),
+        Padding(
+          padding: EdgeInsets.only(left: 16.0, right: 16, top: 20.0),
+          child: BestSellerListViewItem(),
         ),
       ],
     );
