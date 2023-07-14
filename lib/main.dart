@@ -1,10 +1,12 @@
 import 'package:bookly/constants/constant.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'Features/splash/presentation/views/SplashView.dart';
 
 void main() {
   runApp(const BooklyApp());
+  const SystemUiOverlayStyle(statusBarColor: kprimaryColor);
 }
 
 class BooklyApp extends StatelessWidget {
