@@ -6,7 +6,8 @@ import 'Features/splash/presentation/views/SplashView.dart';
 
 void main() {
   runApp(const BooklyApp());
-  const SystemUiOverlayStyle(statusBarColor: kprimaryColor);
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+      overlays: [SystemUiOverlay.bottom]);
 }
 
 class BooklyApp extends StatelessWidget {
