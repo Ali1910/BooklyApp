@@ -22,7 +22,7 @@ class HomeViewBody extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: EdgeInsets.only(left: 16.0, right: 16, top: 20.0),
+          padding: EdgeInsets.only(left: 16.0, top: 20.0),
           child: BestSellerListViewItem(),
         ),
       ],
