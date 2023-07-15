@@ -9,8 +9,8 @@ import 'Features/splash/presentation/views/SplashView.dart';
 
 void main() {
   runApp(const BooklyApp());
-  SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
-      overlays: [SystemUiOverlay.bottom]);
+  // SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+  //     overlays: [SystemUiOverlay.bottom]);
 }
 
 class BooklyApp extends StatelessWidget {
