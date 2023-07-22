@@ -4,8 +4,10 @@ import 'package:bookly/Features/Home/presentation/views/widgets/BookRatingItem.d
 import 'package:bookly/Features/Home/presentation/views/widgets/CustomBookImage.dart';
 import 'package:flutter/material.dart';
 import '../../../../../constants/constant.dart';
+import 'BooksDetiallsitview.dart';
 import 'Booksaction.dart';
 import 'CustomBookDetailsAppbar.dart';
+import 'Featuredlistview.dart';
 
 class Bookdetailviewbody extends StatelessWidget {
   const Bookdetailviewbody({super.key});
@@ -51,7 +53,23 @@ class Bookdetailviewbody extends StatelessWidget {
           const SizedBox(
             height: 37,
           ),
-          const BooksAction()
+          const BooksAction(),
+          const SizedBox(
+            height: 50,
+          ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'You can also like',
+              style: styles.textStyle14.copyWith(
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          const BookDetailListView(),
         ],
       ),
     );
