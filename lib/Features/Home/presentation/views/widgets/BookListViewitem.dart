@@ -8,8 +8,8 @@ import 'package:go_router/go_router.dart';
 import '../../../../../constants/constant.dart';
 import 'BookRatingItem.dart';
 
-class BestSellerListViewItem extends StatelessWidget {
-  const BestSellerListViewItem({super.key});
+class Booklistviewitem extends StatelessWidget {
+  const Booklistviewitem({super.key});
 
   @override
   Widget build(BuildContext context) {
