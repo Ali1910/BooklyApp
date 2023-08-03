@@ -2,7 +2,7 @@ import 'package:bookly/Core/Utitls/Approuters.dart';
 import 'package:bookly/Core/Utitls/assets.dart';
 import 'package:bookly/Features/Home/presentation/views/HomeView.dart';
 import 'package:bookly/Features/splash/presentation/views/widgets/sliding_text.dart';
-import 'package:bookly/constants/constant.dart';
+import 'package:bookly/Core/constants/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

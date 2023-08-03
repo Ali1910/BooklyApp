@@ -4,7 +4,7 @@ import 'package:bookly/Features/Home/presentation/views/widgets/BookRatingItem.d
 import 'package:bookly/Features/Home/presentation/views/widgets/CustomBookImage.dart';
 import 'package:bookly/Features/Home/presentation/views/widgets/similarBooksSection.dart';
 import 'package:flutter/material.dart';
-import '../../../../../constants/constant.dart';
+import '../../../../../Core/constants/constant.dart';
 import 'BookDetailSection.dart';
 import 'BooksDetiallsitview.dart';
 import 'Booksaction.dart';

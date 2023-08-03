@@ -1,5 +1,5 @@
 import 'package:bookly/Core/Utitls/Approuters.dart';
-import 'package:bookly/constants/constant.dart';
+import 'package:bookly/Core/constants/constant.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';

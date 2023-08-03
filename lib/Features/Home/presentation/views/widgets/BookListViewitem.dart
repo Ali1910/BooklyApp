@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../../constants/constant.dart';
+import '../../../../../Core/constants/constant.dart';
 import 'BookRatingItem.dart';
 
 class Booklistviewitem extends StatelessWidget {
