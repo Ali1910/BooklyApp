@@ -44,7 +44,7 @@ class ServerFailure extends Failure {
     } else if (statuscode == 404) {
       return ServerFailure('Your request not found please try again later');
     } else if (statuscode == 500) {
-      return ServerFailure('Internal server error please try again later');
+      return ServerFailure('Internal Server error please try again later');
     } else {
       return ServerFailure('opps there was an error please try again');
     }
