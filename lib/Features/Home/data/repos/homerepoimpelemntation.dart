@@ -23,9 +23,11 @@ class HomeRepoImpelemetation implements HomeREpo {
       }
       return right(books);
     } on Exception catch (e) {
-      return left(ServerFailure());
+      if (e is DioException) {
+        return left(ServerFailure.fromDioException(e));
+      }
+      return left(ServerFailure(e.toString()));
     }
-    throw UnimplementedError();
   }
 
   @override
