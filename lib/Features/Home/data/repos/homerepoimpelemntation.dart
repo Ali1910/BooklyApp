@@ -11,7 +11,7 @@ class HomeRepoImpelemetation implements HomeREpo {
 
   HomeRepoImpelemetation(this.apiService);
   @override
-  Future<Either<Failure, List<BookModel>>> fetchBestNewestBooks() async {
+  Future<Either<Failure, List<BookModel>>> fetchBestBooks() async {
     try {
       var data = await apiService.get(
           endpoint: 'Filtering=free-ebooks&q=subject:programming');
@@ -30,7 +30,7 @@ class HomeRepoImpelemetation implements HomeREpo {
   }
 
   @override
-  Future<Either<Failure, List<BookModel>>> fetchFeaturedBooks() async {
+  Future<Either<Failure, List<BookModel>>> fetchNewestBooks() async {
     try {
       var data = await apiService.get(
           endpoint:
@@ -47,7 +47,5 @@ class HomeRepoImpelemetation implements HomeREpo {
       }
       return left(ServerFailure(e.toString()));
     }
-
-    throw UnimplementedError();
   }
 }
