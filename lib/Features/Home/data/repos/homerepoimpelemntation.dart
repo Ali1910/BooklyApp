@@ -11,7 +11,7 @@ class HomeRepoImpelemetation implements HomeREpo {
 
   HomeRepoImpelemetation(this.apiService);
   @override
-  Future<Either<Failure, List<BookModel>>> fetchBestBooks() async {
+  Future<Either<Failure, List<BookModel>>> fetchFeaturedBooks() async {
     try {
       var data = await apiService.get(
           endpoint: 'Filtering=free-ebooks&q=subject:programming');
