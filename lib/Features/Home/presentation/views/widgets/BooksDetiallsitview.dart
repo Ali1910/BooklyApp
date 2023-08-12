@@ -12,7 +12,10 @@ class BookDetailListView extends StatelessWidget {
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
-          return const CustomBookItem();
+          return const CustomBookItem(
+            imageUrl:
+                'https://th.bing.com/th/id/OIP.iSu2RcCcdm78xbxNDJMJSgHaEo?pid=ImgDet&rs=1',
+          );
         },
         separatorBuilder: (context, index) {
           return const SizedBox(
