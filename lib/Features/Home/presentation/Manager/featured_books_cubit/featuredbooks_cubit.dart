@@ -11,6 +11,7 @@ class FeaturedbooksCubit extends Cubit<FeaturedbooksState> {
   final HomeREpo homperepo;
 
   Future<void> fetchFeaturedBooks() async {
+    emit(FeaturedbooksLoading());
     var result = await homperepo.fetchFeaturedBooks();
 
     result.fold(
@@ -21,6 +22,5 @@ class FeaturedbooksCubit extends Cubit<FeaturedbooksState> {
         emit(FeaturedbooksSucces(books));
       },
     );
-    emit(FeaturedbooksLoading());
   }
 }
